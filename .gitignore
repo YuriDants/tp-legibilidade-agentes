@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+
+# Large / temporary experiment workspaces
+experiment/full_runs/
+experiment/pilot_runs/
+
+# Verbose logs
+experiment/full_results/logs/
+experiment/pilot_results/logs/
+
+# Local temporary files
+*.tmp
+*.swp
+.DS_Store
