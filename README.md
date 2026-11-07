@@ -2,7 +2,7 @@
 
 Trabalho final da disciplina **Manutenção e Evolução de Software**.
 
-> **Status:** experimento final em execução. A infraestrutura, o dataset, a transformação e o piloto já foram concluídos e validados.
+> **Status:** coleta experimental concluída e auditada. As 240 execuções finais foram registradas, sem erros de infraestrutura, timeouts ou violações do protocolo. A análise dos resultados é a próxima etapa.
 
 ## Objetivo
 
@@ -173,9 +173,25 @@ As execuções são feitas em ordem pseudoaleatória com seed fixa:
 
 O runner possui checkpoint e pode ser retomado sem repetir execuções concluídas.
 
-Arquivo de resultados ao final:
+Arquivo de resultados:
 
 `experiment/full_results/full_results.csv`
+
+Resultado da auditoria estrutural:
+
+- **240/240 execuções presentes**;
+- **240 chaves experimentais únicas**;
+- **60/60 bugs com as quatro combinações esperadas**;
+- **0 duplicatas**;
+- **0 erros de harness**;
+- **0 timeouts**;
+- **0 violações do protocolo**;
+- **0 alterações indevidas de arquivos protegidos**;
+- **240/240 reparos bem-sucedidos**.
+
+SHA-256 do CSV final:
+
+`a036c5d59cbd627c9fce258cd5cfd26c61f0aa013a415a4a7b7a30853dd7d431`
 
 ## Métricas coletadas
 
@@ -205,7 +221,7 @@ Para cada agente serão contados os casos em que:
 - corrigiu somente Obfuscated;
 - não corrigiu nenhum.
 
-Se houver discordâncias suficientes entre os pares, será considerado o teste de **McNemar** para a variável binária de sucesso.
+Como todas as 240 execuções foram bem-sucedidas, não há pares discordantes na variável binária de sucesso; portanto, um teste de McNemar não é informativo para este resultado. A interpretação deve se restringir ao conjunto e protocolo avaliados, sem concluir genericamente que legibilidade não importa para agentes.
 
 Também serão analisados:
 
@@ -219,7 +235,7 @@ Também serão analisados:
 
 ### Yuri — preparação e infraestrutura experimental
 
-Responsabilidades concluídas ou em fase final:
+Responsabilidades concluídas:
 
 - estudo do benchmark Refactory;
 - implementação do runner;
@@ -246,18 +262,18 @@ Na apresentação, esta parte corresponde aproximadamente aos **slides 1–5**:
 
 Responsabilidades após o término dos 240 runs:
 
-1. auditar `full_results.csv`;
-2. confirmar as 240 execuções esperadas;
-3. verificar timeouts, erros do harness e violações do protocolo;
-4. construir a análise pareada Original × Obfuscated;
-5. calcular resultados por agente;
-6. analisar wall-clock time;
-7. analisar tamanho dos patches;
-8. analisar métricas internas quando apropriado;
-9. realizar teste estatístico pareado quando aplicável;
-10. gerar gráficos e tabelas;
-11. elaborar ameaças à validade;
-12. preparar os slides 6–10.
+1. revisar o CSV final e a auditoria estrutural já concluída;
+2. construir a análise Original × Obfuscated por agente;
+3. documentar o efeito teto observado na taxa de sucesso (240/240 reparos);
+4. analisar wall-clock time de forma pareada;
+5. analisar tamanho dos patches;
+6. analisar comandos/turns e métricas internas quando apropriado;
+7. evitar comparação direta de tokens entre fornecedores;
+8. gerar gráficos e tabelas;
+9. interpretar RQ1, RQ2 e RQ3 sem extrapolar além do conjunto avaliado;
+10. elaborar ameaças à validade;
+11. preparar os slides 6–10;
+12. revisar as conclusões finais em conjunto com Yuri.
 
 Na apresentação, esta parte corresponde aproximadamente aos **slides 6–10**:
 
@@ -303,8 +319,8 @@ Esses hashes identificam a versão do dataset utilizada no experimento.
 - [x] Agentes e modelos congelados
 - [x] Smoke tests
 - [x] Piloto 20/20
-- [ ] Experimento final 240/240
-- [ ] Auditoria dos resultados
+- [x] Experimento final 240/240
+- [x] Auditoria estrutural dos resultados
 - [ ] Análise estatística
 - [ ] Gráficos
 - [ ] Slides 1–10
