@@ -1,0 +1,10 @@
+Repair the bug in this Python program.
+
+Requirements:
+- Modify only bug.py.
+- Do not modify run_tests.py, global.py, files under ans/, or any other file.
+- Preserve the public function names and expected interfaces.
+- Do not hardcode answers or special-case the supplied test inputs.
+- Make the smallest general-purpose correction that fixes the underlying defect.
+- You may inspect the files and run `python3 run_tests.py` as many times as needed.
+- Finish only after checking the test suite.

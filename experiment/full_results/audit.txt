@@ -1,0 +1,53 @@
+========================================================================
+AUDIT — FULL EXPERIMENT
+========================================================================
+CSV rows:           240
+Manifest cases:     60
+CSV columns:        33
+
+Columns:
+agent, agent_returncode, agent_timeout, baseline_failed, baseline_passed, baseline_total, bug_changed, bug_id, cache_read_tokens, cached_input_tokens, command_executions, condition, harness_error, input_tokens, internal_duration_seconds, model, output_tokens, patch_added_lines, patch_removed_lines, patch_total_lines, policy_violation, post_failed, post_passed, post_total, protected_changes, question, reasoning_tokens, reported_total_tokens, run_order, shuffle_seed, success, turns, wall_seconds
+
+--- COMPLETENESS ---
+Unique run keys:    240
+Duplicate keys:     0
+Expected bugs:      60
+Observed bugs:      60
+Missing bugs:       0
+Unexpected bugs:    0
+
+--- GROUP COUNTS ---
+antigravity     obfuscated  : 60
+antigravity     original    : 60
+codex           obfuscated  : 60
+codex           original    : 60
+Bugs without exactly 4 expected combinations: 0
+
+--- REPAIR OUTCOME ---
+Success:            240
+Failure:            0
+
+--- INFRASTRUCTURE / POLICY ---
+harness_error       : 0
+agent_timeout       : 0
+policy_violation    : 0
+protected_changes   : 0 non-empty
+bug_changed=false   : 0
+
+--- REQUIRED FIELDS ---
+question            : 0 empty
+bug_id              : 0 empty
+condition           : 0 empty
+agent               : 0 empty
+model               : 0 empty
+success             : 0 empty
+run_order           : 0 empty
+
+--- FINGERPRINT ---
+full_results.csv SHA256:
+a036c5d59cbd627c9fce258cd5cfd26c61f0aa013a415a4a7b7a30853dd7d431
+
+========================================================================
+AUDIT RESULT: PASS
+The 240-run result set is structurally complete and clean.
+========================================================================

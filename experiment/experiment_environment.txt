@@ -1,0 +1,11 @@
+date=2026-11-07T12:13:54-03:00
+python=Python 3.12.3
+codex=codex-cli 0.167.0
+antigravity=1.5.3
+node=v24.17.0
+codex_model=gpt-6.1-sol
+codex_effort=medium
+antigravity_model=gemini-4-argon-medium
+antigravity_effort=medium
+dataset_manifest_sha256=33004beffa8d42dae8d520b672b90356c2cc3d49455ba4fd933f993c2f508893
+dataset_files_sha256=e99fc39768f72cbf087cbd5aa7151869a95823bc43ccfaea0a2f06f26c91c5bf
