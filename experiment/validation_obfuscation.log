@@ -1,0 +1,69 @@
+=== VALIDATING ORIGINAL vs OBFUSCATED ===
+wrong_1_078        question_1  IDENTICAL
+wrong_1_067        question_1  IDENTICAL
+wrong_1_320        question_1  IDENTICAL
+wrong_1_011        question_1  IDENTICAL
+wrong_1_079        question_1  IDENTICAL
+wrong_1_340        question_1  IDENTICAL
+wrong_1_196        question_1  IDENTICAL
+wrong_1_404        question_1  IDENTICAL
+wrong_1_270        question_1  IDENTICAL
+wrong_1_496        question_1  IDENTICAL
+wrong_1_201        question_1  IDENTICAL
+wrong_1_533        question_1  IDENTICAL
+wrong_2_243        question_2  IDENTICAL
+wrong_2_326        question_2  IDENTICAL
+wrong_2_291        question_2  IDENTICAL
+wrong_2_123        question_2  IDENTICAL
+wrong_2_019        question_2  IDENTICAL
+wrong_2_319        question_2  IDENTICAL
+wrong_2_358        question_2  IDENTICAL
+wrong_2_125        question_2  IDENTICAL
+wrong_2_229        question_2  IDENTICAL
+wrong_2_147        question_2  IDENTICAL
+wrong_2_185        question_2  IDENTICAL
+wrong_2_010        question_2  IDENTICAL
+wrong_3_226        question_3  IDENTICAL
+wrong_3_015        question_3  IDENTICAL
+wrong_3_114        question_3  IDENTICAL
+wrong_3_233        question_3  IDENTICAL
+wrong_3_050        question_3  IDENTICAL
+wrong_3_234        question_3  IDENTICAL
+wrong_3_056        question_3  IDENTICAL
+wrong_3_145        question_3  IDENTICAL
+wrong_3_093        question_3  IDENTICAL
+wrong_3_294        question_3  IDENTICAL
+wrong_3_158        question_3  IDENTICAL
+wrong_3_254        question_3  IDENTICAL
+wrong_4_009        question_4  IDENTICAL
+wrong_4_227        question_4  IDENTICAL
+wrong_4_125        question_4  IDENTICAL
+wrong_4_092        question_4  IDENTICAL
+wrong_4_012        question_4  IDENTICAL
+wrong_4_156        question_4  IDENTICAL
+wrong_4_356        question_4  IDENTICAL
+wrong_4_348        question_4  IDENTICAL
+wrong_4_145        question_4  IDENTICAL
+wrong_4_144        question_4  IDENTICAL
+wrong_4_033        question_4  IDENTICAL
+wrong_4_184        question_4  IDENTICAL
+wrong_5_034        question_5  IDENTICAL
+wrong_5_073        question_5  IDENTICAL
+wrong_5_058        question_5  IDENTICAL
+wrong_5_087        question_5  IDENTICAL
+wrong_5_008        question_5  IDENTICAL
+wrong_5_056        question_5  IDENTICAL
+wrong_5_060        question_5  IDENTICAL
+wrong_5_097        question_5  IDENTICAL
+wrong_5_006        question_5  IDENTICAL
+wrong_5_036        question_5  IDENTICAL
+wrong_5_014        question_5  IDENTICAL
+wrong_5_050        question_5  IDENTICAL
+
+=== SUMMARY ===
+Total cases:       60
+Identical:         60
+Different:         0
+
+VALIDATION: PASS
+All obfuscated programs reproduce exactly the same observable behavior as their originals.
